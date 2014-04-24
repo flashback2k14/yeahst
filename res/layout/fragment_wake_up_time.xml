@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlWakeUpTimeActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.yeahdev.yeahsleeptimerpaid.WakeUpTimeActivity$PlaceholderFragment" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+    
+  	<RelativeLayout
+  	    android:id="@+id/RelativeLayout1"
+  	    android:layout_width="match_parent"
+  	    android:layout_height="wrap_content"
+  	    android:orientation="vertical"
+  	    android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/tvTextWUT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="@string/textWUT"
+            android:textColor="@color/headlineWhite" />
+
+        <TimePicker
+            android:id="@+id/tpWUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTextWUT"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:paddingBottom="-5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="-5dp" />
+
+        <Button
+            android:id="@+id/btnGoWUT"
+            style="@style/DefaultButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tpWUT"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="1dp"
+            android:background="@drawable/button_default_bg"
+            android:minHeight="48dp"
+            android:text="@string/btnGo" />
+
+      	</RelativeLayout>
+ 	</ScrollView>
+  
+    <view
+        android:id="@+id/cardlistviewWUT"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@id/scrollView1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        class="it.gmariotti.cardslib.library.view.CardListView" />
+    
+</RelativeLayout>

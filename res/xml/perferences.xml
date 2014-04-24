@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <PreferenceCategory 
+        android:key="main_category"
+        android:title="Main Category" >
+        
+        <CheckBoxPreference 
+            android:key="perform_updates_fallasleep"
+            android:title="Enable fall-asleep-time" 
+            android:summary="Enable or disable fall-asleep-time"
+            android:defaultValue="true" />
+        
+        <ListPreference 
+            android:key="updates_interval_fallasleep"
+            android:title="Change fall-asleep-time"
+            android:summary="Define the fall-asleep-time.\nDefault time is 14 minutes."
+            android:defaultValue="840000" 
+            android:entries="@array/fallAsleepInterval"
+            android:entryValues="@array/fallAsleepIntervalValues"
+            android:dependency="perform_updates_fallasleep" />    
+            
+    </PreferenceCategory>
+
+    <PreferenceCategory 
+        android:key="sub_category"
+        android:title="Sub Category">
+
+        <Preference 
+            android:key="btnOpenInAppBillingPref"
+            android:title="Support the Developer"
+            android:summary="Thanks for supporting my work!"/>   
+            
+        <Preference 
+            android:key="linkToPlayStorePref"
+            android:title="Go to Play Store" 
+            android:summary="Please give me a feedback on the play store!" />		        
+        
+        <Preference 
+            android:key="btnSendFeedbackEmailPref"
+            android:title="Feedback" 
+            android:summary="Please send me a feedback!" />
+        
+        <Preference 
+            android:key="btnOpenLicenseDialogPref" 
+            android:title="Credits"
+            android:summary="Thanks for the great Libraries!"/>
+  
+    </PreferenceCategory>
+    
+</PreferenceScreen>

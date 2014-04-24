@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style parent="@android:style/Theme.Holo" name="MyTheme">
+		<item name="android:actionBarStyle">@style/MyActionBar</item>
+		<item name="android:windowTranslucentStatus">true</item>
+		<item name="android:windowTranslucentNavigation">true</item>
+	</style>
+
+	<style parent="@android:style/Widget.Holo.ActionBar" name="MyActionBar">
+		<item name="android:background">#FF8800</item>
+	</style>
+    
+	<color name="etHeadlineColor">#FF8800</color>
+	
+</resources>

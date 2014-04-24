@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.yeahdev.yeahsleeptimerpaid.MainActivity" >
+
+    <item
+        android:id="@+id/menu_item_share"
+        android:icon="@drawable/ic_action_social_share"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_share" />
+    
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_action_core_overflow"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_settings"/>
+  
+</menu>

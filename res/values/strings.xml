@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Yeah!\nSleepTimer *Paid*</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_share">Share</string>
+
+    <style name="DefaultButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:shadowColor">#f9f9f9</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <string name="startTitle">Choose an Action</string>
+    <string name="wutTitle">Wake Up Time</string>
+    <string name="btn1">Wake up time</string>
+    <string name="btn2">Go to Bed time</string>
+    <string name="btn3">Go to Bed, Now!</string>
+    <string name="btnGo">Go</string>
+    <string name="textWUT">Please select a time when you want to wake up.</string>
+
+    <string name="btnDialogClose">Close</string>
+    <string name="l1">Thank you very much for using my app. I use following libraries:</string>
+    <string name="l2">Card Library</string>
+    <string name="l21">https://github.com/gabrielemariotti/cardslib</string>
+    <string name="l22">Apache Version 2.0</string>
+    <string name="l3">SystemBarTint Library</string>
+    <string name="l31">https://github.com/jgilfelt/SystemBarTint</string>
+    
+    
+</resources>

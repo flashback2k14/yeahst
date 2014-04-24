@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="etUlineColor">#FF8800</color>
+	<color name="headlineWhite">#FFFFFF</color>
+	<color name="textColorBlack">#000000</color>
+</resources>
