@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    
     <!-- settings -->
     <string name="app_name">Yeah!\nSleepTimer *Paid*</string>
     <string name="firstloadtitle">Yeah! SleepTimer</string>
@@ -17,6 +17,7 @@
     <string name="btn3">Go to Bed, Now!</string>
     <string name="btnGo">Go</string>
     <string name="textWUT">Please select a time when you want to wake up.</string>
+    <string name="textWUT2">You can set an Alarm, if you click at a card.</string>
     <string name="textGTB">Please select a time when you want to go to bed.</string>
     <string name="wut">. Wake-up-time:</string>
     <string name="gtst">. Go-to-sleep-time:</string>
@@ -48,7 +49,7 @@
 	    ]]>
     </string>
     
-	<!-- preferences -->
+    <!-- preferences -->
 	<string name="cat1">Main Category</string>
 	<string name="upd_fat1">Enable fall-asleep-time</string>
 	<string name="upd_fat2">Enable or disable fall-asleep-time</string>
@@ -65,5 +66,5 @@
 	<string name="fb4">Please send me a feedback per email!</string>
 	<string name="cred1">Credits</string>
 	<string name="cred2">Thanks for the great Libraries!</string>
-
+    
 </resources>

@@ -6,25 +6,25 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.yeahdev.yeahsleeptimerpaid.fragments.WakeUpTimeFragment;
+import com.yeahdev.yeahsleeptimerpaid.fragments.GoToBedFragment;
 
-public class WakeUpTimeActivity extends Activity {
+public class GoToBedActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.fragment_wake_up_time);
+		setContentView(R.layout.fragment_go_to_bed);
 		getActionBar().setIcon(R.drawable.ic_launcher_ab);
-		setTitle(getResources().getString(R.string.wutTitle));
+		setTitle(getResources().getString(R.string.gtbTitle));
 
 		if (savedInstanceState == null) {
-			getFragmentManager().beginTransaction().add(R.id.rlWakeUpTimeActivity, new WakeUpTimeFragment()).commit();
+			getFragmentManager().beginTransaction().add(R.id.rlGoToBedActivity, new GoToBedFragment()).commit();
 		}
 	}
 	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.wake_up_time, menu);
+		getMenuInflater().inflate(R.menu.go_to_bed, menu);
 		return true;
 	}
 
@@ -32,8 +32,8 @@ public class WakeUpTimeActivity extends Activity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		int id = item.getItemId();
 		//
-		if (id == R.id.action_settingsWUT) {
-			Intent i = new Intent(WakeUpTimeActivity.this, PrefsActivity.class);
+		if (id == R.id.action_settingsGTB) {
+			Intent i = new Intent(GoToBedActivity.this, PrefsActivity.class);
 			startActivity(i);	
 			return true;
 		}

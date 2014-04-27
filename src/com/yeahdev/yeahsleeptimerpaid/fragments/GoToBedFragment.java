@@ -22,11 +22,11 @@ import com.yeahdev.yeahsleeptimerpaid.R;
 import com.yeahdev.yeahsleeptimerpaid.ownClasses.ColorCard;
 import com.yeahdev.yeahsleeptimerpaid.ownClasses.SleepTimerLogic;
 
-public class WakeUpTimeFragment extends Fragment {
+public class GoToBedFragment extends Fragment {
 
 	private SharedPreferences sharedPrefs;
 	private boolean useFallAsleepTime;
-	private  String tmpUserFAT;
+	private String tmpUserFAT;
 	private int userFallAsleepTime = 0;
 	private TimePicker timePicker;
 	private Button btnGo;
@@ -39,18 +39,18 @@ public class WakeUpTimeFragment extends Fragment {
 		stm.setStatusBarTintEnabled(true);
 		stm.setStatusBarTintColor(getResources().getColor(R.color.etHeadlineColor));
 		//
-	    timePicker = (TimePicker)getActivity().findViewById(R.id.tpWUT);
+	    timePicker = (TimePicker)getActivity().findViewById(R.id.tpGTB);
         timePicker.setIs24HourView(true);
         timePicker.setCurrentHour(Calendar.getInstance().get(Calendar.HOUR_OF_DAY));
         //
-        btnGo = (Button)getActivity().findViewById(R.id.btnGoWUT);
+        btnGo = (Button)getActivity().findViewById(R.id.btnGoGTB);
         btnGo.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
 				int hourNow;
 				int minuteNow;
-				String[] calcWakeUpTimes = null;
+				String[] calcGoToBedTimes = null;
 				//
 				sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
 				useFallAsleepTime = sharedPrefs.getBoolean("perform_updates_fallasleep", false);
@@ -65,10 +65,10 @@ public class WakeUpTimeFragment extends Fragment {
 				//
 				SleepTimerLogic logic = new SleepTimerLogic(useFallAsleepTime, userFallAsleepTime);
 				userFallAsleepTime = 0;
-				calcWakeUpTimes = logic.calcWakeUpTime(hourNow, minuteNow);				
+				calcGoToBedTimes = logic.calcGoToSleepTime(hourNow, minuteNow);				
 				//
-				if (calcWakeUpTimes != null) {
-					initCards(calcWakeUpTimes);
+				if (calcGoToBedTimes != null) {
+					initCards(calcGoToBedTimes);
 				} else {
 					Toast.makeText(getActivity(), "Something went wrong! :-)", Toast.LENGTH_SHORT).show();
 				}
@@ -76,20 +76,20 @@ public class WakeUpTimeFragment extends Fragment {
 		});
 	}
 
-	public void initCards(String[] wakeUpTimes) {
+	public void initCards(String[] goToBedTimes) {
         //Init an array of Cards
         ArrayList<Card> cards = new ArrayList<Card>();
         //
         for (int i = 0; i < 6; i++) {
             //
         	ColorCard card = new ColorCard(getActivity());
-            card.setHeader((i+1) + getResources().getString(R.string.gtst));
-            card.setTime(wakeUpTimes[i]);
+            card.setHeader((i+1) + getResources().getString(R.string.wut));
+            card.setTime(goToBedTimes[i]);
             card.setSleepCycle((i+1) + getResources().getString(R.string.sc));
             //
             switch (i) {
                 case 0:
-                    card.setBackgroundResourceId(R.drawable.card_selec_dark_red);                	
+                	card.setBackgroundResourceId(R.drawable.card_selec_dark_red);       	
                     break;
                 case 1:
                     card.setBackgroundResourceId(R.drawable.card_selec_light_red);
@@ -104,7 +104,7 @@ public class WakeUpTimeFragment extends Fragment {
                     card.setBackgroundResourceId(R.drawable.card_selec_light_green);
                     break;
                 case 5:
-                    card.setBackgroundResourceId(R.drawable.card_selec_dark_green);
+                    card.setBackgroundResourceId(R.drawable.card_bg_dark_green);
                     break;
             }
             //
@@ -113,7 +113,7 @@ public class WakeUpTimeFragment extends Fragment {
         //
         CardArrayAdapter mCardArrayAdapter = new CardArrayAdapter(getActivity(), cards);
         //
-        CardListView listView = (CardListView)getActivity().findViewById(R.id.cardlistviewWUT);
+        CardListView listView = (CardListView)getActivity().findViewById(R.id.cardlistviewGTB);
         //
         if (listView != null) {
             listView.setAdapter(mCardArrayAdapter);

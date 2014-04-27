@@ -1,6 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/rlWakeUpTimeActivity"
+    android:id="@+id/rlGoToBedActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clipToPadding="false"
@@ -9,64 +9,64 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.yeahdev.yeahsleeptimerpaid.WakeUpTimeActivity$PlaceholderFragment" >
+    tools:context="com.yeahdev.yeahsleeptimerpaid.GoToBedActivity$PlaceholderFragment" >
 
     <ScrollView
-        android:id="@+id/scrollView1"
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp" >
     
   	<RelativeLayout
-  	    android:id="@+id/RelativeLayout1"
+  	    android:id="@+id/RelativeLayout2"
   	    android:layout_width="match_parent"
   	    android:layout_height="wrap_content"
   	    android:orientation="vertical"
   	    android:paddingTop="5dp" >
 
         <TextView
-            android:id="@+id/tvTextWUT"
+            android:id="@+id/tvTextGTB"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
             android:gravity="center"
-            android:text="@string/textWUT"
+            android:text="@string/textGTB"
             android:textColor="@color/headlineWhite" />
 
         <TimePicker
-            android:id="@+id/tpWUT"
+            android:id="@+id/tpGTB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tvTextWUT"
+            android:layout_below="@+id/tvTextGTB"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="9dp"
-            android:paddingBottom="-10dp"
+            android:layout_marginTop="1dp"
+            android:paddingBottom="-5dp"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:paddingTop="-15dp" />
+            android:paddingTop="-5dp" />
         
         <Button
-            android:id="@+id/btnGoWUT"
+            android:id="@+id/btnGoGTB"
             style="@style/DefaultButtonText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tpWUT"
+            android:layout_below="@+id/tpGTB"
             android:layout_centerHorizontal="true"
             android:layout_margin="1dp"
             android:background="@drawable/button_default_bg"
             android:minHeight="48dp"
             android:text="@string/btnGo" />
-        
+
       	</RelativeLayout>
  	</ScrollView>
   
     <view
-        android:id="@+id/cardlistviewWUT"
+        android:id="@+id/cardlistviewGTB"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
-        android:layout_below="@id/scrollView1"
+        android:layout_below="@id/scrollView2"
         android:layout_centerHorizontal="true"
         android:layout_margin="10dp"
         class="it.gmariotti.cardslib.library.view.CardListView" />

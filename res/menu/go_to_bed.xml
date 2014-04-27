@@ -1,9 +1,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.yeahdev.yeahsleeptimerpaid.WakeUpTimeActivity" >
+    tools:context="com.yeahdev.yeahsleeptimerpaid.GoToBedActivity" >
 
     <item
-        android:id="@+id/action_settingsWUT"
+        android:id="@+id/action_settingsGTB"
         android:icon="@drawable/ic_action_core_overflow"
         android:showAsAction="ifRoom"
         android:title="@string/action_settings"/>

@@ -29,7 +29,7 @@ public class SleepTimerLogic {
 		}
 		
 		if (userFallAsleepTime != 0) {
-			minutes = minutes - userFallAsleepTime;
+			minutes = minutes + userFallAsleepTime;
 		}
 		
 		for (int i = 0; i < goToSleepTimes.length; i++) {

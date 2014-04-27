@@ -15,6 +15,7 @@ public class ColorCard extends Card {
 	private Context context;
     protected String mHeader;
     protected String mTime;
+    protected String mSleepCycle;
 
     public ColorCard(Context context) {
         this(context, R.layout.card_color_inner_base);
@@ -42,7 +43,15 @@ public class ColorCard extends Card {
         mTime = time;
     }
     
-    private void init() {
+    public String getSleepCycle() {
+		return mSleepCycle;
+	}
+
+	public void setSleepCycle(String mSleepCycle) {
+		this.mSleepCycle = mSleepCycle;
+	}
+
+	private void init() {
         //Add ClickListener
         setOnClickListener(new OnCardClickListener() {
             @Override
@@ -67,11 +76,19 @@ public class ColorCard extends Card {
         //Retrieve elements
         TextView tvHeader = (TextView) parent.findViewById(R.id.card_header_inner_simple_title);
         TextView tvTime = (TextView) parent.findViewById(R.id.carddemo_card_color_inner_simple_title);
+        TextView tvSleepCycle = (TextView) parent.findViewById(R.id.carddemo_card_color_inner_simple_title2);
         //	
-        if (tvHeader != null)
+        if (tvHeader != null) {
             tvHeader.setText(mHeader);
+        }
         //
-        if (tvTime != null)
+        if (tvTime != null) {
             tvTime.setText(mTime);
+        }
+        //
+        if (tvSleepCycle != null) {
+        	tvSleepCycle.setText(mSleepCycle);
+        }
+        
     }
 }

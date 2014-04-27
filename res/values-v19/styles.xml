@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
     
     <style parent="@android:style/Theme.Holo" name="MyTheme">
 		<item name="android:actionBarStyle">@style/MyActionBar</item>
+		<item name="android:alertDialogStyle">@style/CustomDialogTheme</item>
 		<item name="android:windowTranslucentStatus">true</item>
 		<item name="android:windowTranslucentNavigation">true</item>
 	</style>
 
 	<style parent="@android:style/Widget.Holo.ActionBar" name="MyActionBar">
-		<item name="android:background">#FF8800</item>
+		<item name="android:background">@color/etHeadlineColor</item>
 	</style>
     
-	<color name="etHeadlineColor">#FF8800</color>
-	
+	<style name="CustomDialogTheme" parent="@android:style/Theme.Holo.Dialog">
+    	<item name="android:textColor">@color/headlineWhite</item>
+    	<item name="android:padding">0dp</item>
+     	<item name="android:divider">@color/etHeadlineColor</item>
+<!--     	<item name="android:bottomBright">@color/headlineWhite</item> -->
+<!--     	<item name="android:bottomDark">@color/headlineWhite</item> -->
+<!--     	<item name="android:bottomMedium">@color/headlineWhite</item> -->
+<!--     	<item name="android:centerBright">@color/headlineWhite</item> -->
+<!--     	<item name="android:centerDark">@color/headlineWhite</item> -->
+<!--     	<item name="android:centerMedium">@color/headlineWhite</item> -->
+<!--     	<item name="android:fullBright">@color/etHeadlineColor</item> -->
+<!--     	<item name="android:fullDark">@color/etHeadlineColor</item> -->
+<!--     	<item name="android:topBright">@color/etHeadlineColor</item> -->
+<!--     	<item name="android:topDark">@color/etHeadlineColor</item> -->
+	</style>
+		
 </resources>

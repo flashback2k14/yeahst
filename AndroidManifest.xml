@@ -2,13 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.yeahdev.yeahsleeptimerpaid"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="0.8" >
 
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="19" />
 
-    <uses-permission android:name="android.permission.BILLING" />
+    <uses-permission android:name="com.android.vending.BILLING" />
 
     <application
         android:allowBackup="true"
@@ -27,16 +27,32 @@
         </activity>
         <activity
             android:name="com.yeahdev.yeahsleeptimerpaid.WakeUpTimeActivity"
-            android:screenOrientation="portrait"
-            android:parentActivityName="com.yeahdev.yeahsleeptimerpaid.MainActivity" >
+            android:parentActivityName="com.yeahdev.yeahsleeptimerpaid.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yeahdev.yeahsleeptimerpaid.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.yeahdev.yeahsleeptimerpaid.GoToBedActivity"
+            android:parentActivityName="com.yeahdev.yeahsleeptimerpaid.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yeahdev.yeahsleeptimerpaid.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.yeahdev.yeahsleeptimerpaid.GoToBedNowActivity"
+            android:parentActivityName="com.yeahdev.yeahsleeptimerpaid.MainActivity"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.yeahdev.yeahsleeptimerpaid.MainActivity" />
         </activity>
         <activity
             android:name="com.yeahdev.yeahsleeptimerpaid.PrefsActivity"
-            android:screenOrientation="portrait"
-            android:parentActivityName="com.yeahdev.yeahsleeptimerpaid.MainActivity" >
+            android:parentActivityName="com.yeahdev.yeahsleeptimerpaid.MainActivity"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.yeahdev.yeahsleeptimerpaid.MainActivity" />
