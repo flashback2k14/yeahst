@@ -2,11 +2,15 @@
 <resources>
     
     <!-- settings -->
-    <string name="app_name">Yeah!\nSleepTimer *Paid*</string>
+    <string name="app_name">Yeah!\nSleepTimer</string>
     <string name="firstloadtitle">Yeah! SleepTimer</string>
     <string name="action_settings">Einstellungen</string>
     <string name="action_share">Teilen</string>
 
+    <!-- Feedback -->
+    <string name="fbSubject">Feedback Yeah! SleepTimer</string>
+	<string name="fbBody">Vielen Dank für das Benutzen meiner App! Bitte sende mir deine Meinung!\n\nhilfreiche Angaben\n\nTelefon:\nAndroid-OS:\nPro:\nKon:\nAnregungen:\nFehler:</string>
+       
     <!-- actvitys -->
     <string name="startTitle">Wähle eine Aktion</string>
     <string name="wutTitle">Aufwachzeit</string>
@@ -61,13 +65,22 @@
 	<string name="cat2">Unterkategorie</string>
 	<string name="htu1">Verwendung der App</string>
 	<string name="htu2">Bitte sag mir was ich machen kann!</string>
-	<string name="sup1">Unterstützung für den Entwickler</string>
-	<string name="sup2">Vielen Dank für die Unterstützung meiner Arbeit!</string>
+	<string name="sup">Unterstützung für den Entwickler</string>
+	<string name="noads">Das entfernt nicht die Werbung!</string>
+	<string name="sup21">Spende</string>
+	<string name="sup22">Danke für die Unterstützung meiner Arbeit.</string>
+	<string name="sup31">Spende XL</string>
+	<string name="sup32">Großen Danke für die Unterstützung meiner Arbeit!</string>
+	<string name="sup41">Spende XXL</string>
+	<string name="sup42">Danke, Danke, Danke, Danke für die Unterstützung meiner Arbeit!</string>	
 	<string name="fb1">Geh zum Play Store</string>
 	<string name="fb2">Bitte gib mir ein Feedback im Play Store!</string>
 	<string name="fb3">Feedback</string>
 	<string name="fb4">Bitte sende mir ein Feedback per Email!</string>
 	<string name="cred1">Danksagung</string>
 	<string name="cred2">an die großartigen Bibliotheken!</string>
-    
+	    
+	<string name="list_card_undo_title">Rückgängig</string>
+	
+	
 </resources>

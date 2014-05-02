@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<color name="etHeadlineColor">#FF8800</color>
-	<color name="backgroundColor">#8A7967</color>
 	<color name="headlineWhite">#FFFFFF</color>
 	<color name="textColorBlack">#000000</color>
 	<color name="shadowColor">#F9F9F9</color>

@@ -52,7 +52,7 @@ public class MainActivity extends Activity {
 	    //
 		sharingIntent.setType("text/plain");
 	    //
-		String shareBody = "I'm using Yeah! SleepTimer. Get it while it's hot! \n\n\nhttps://play.google.com/store/apps/details?id=com.flashback.yeahklr.yklr&hl=de";
+		String shareBody = "I'm using Yeah! SleepTimer. Get it while it's hot! \n\n\nhttps://play.google.com/store/apps/details?id=com.yeahdev.yeahsleeptimerpaid";
 	    sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Yeah! SleepTimer");
 	    sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
 	    //

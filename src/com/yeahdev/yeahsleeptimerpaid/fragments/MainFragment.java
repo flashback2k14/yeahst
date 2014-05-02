@@ -70,7 +70,7 @@ public class MainFragment extends Fragment {
 	    		startActivity(iGTBN);
 	    	}
 	    });
-	 }
+	}
 	
 	public void openFirstLoadDialog() {
 		AlertDialog.Builder dialog = new AlertDialog.Builder(getActivity(), R.style.CustomDialogTheme);

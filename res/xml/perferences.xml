@@ -32,10 +32,38 @@
             android:summary="@string/htu2"
             android:defaultValue="true"/>   
         
-        <Preference 
-            android:key="btnOpenInAppBillingPref"
-            android:title="@string/sup1"
-            android:summary="@string/sup2"/>   
+        <PreferenceScreen 
+            android:key="supportDeveloperSubscreen"
+            android:title="@string/sup"
+            android:summary="@string/noads"
+            android:persistent="false" >
+                                    
+            <Preference 
+            	android:key="@null"
+            	android:title="@null"
+            	android:summary="@string/noads"/>
+            
+            <Preference 
+            	android:key="btnOpenInAppBillingSup1Pref"
+            	android:title="@string/sup21"
+            	android:summary="@string/sup22"/>
+            
+            <Preference 
+            	android:key="btnOpenInAppBillingSup2Pref"
+            	android:title="@string/sup31"
+            	android:summary="@string/sup32"/>
+            
+            <Preference 
+            	android:key="btnOpenInAppBillingSup3Pref"
+            	android:title="@string/sup41"
+            	android:summary="@string/sup42"/>
+            
+        </PreferenceScreen>
+       
+<!--         <Preference  								 -->
+<!--             android:key="btnOpenInAppBillingPref" 	 -->
+<!--             android:title="@string/sup1"			 -->
+<!--             android:summary="@string/sup2"/>    	 -->
             
         <Preference 
             android:key="linkToPlayStorePref"
